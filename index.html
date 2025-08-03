@@ -1,8 +1,150 @@
 <html>
     <head>
         <title>Alex and Liz Wedding</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-        hello world
+        <div class="container">
+            <div class="column">
+                <h1>Wedding of Alexandre Laplante and Elizabeth LeCrone</h1>
+                <table>
+                    <tr>
+                        <td class="key">Date</td> <td>May 31, 2026 at 4pm</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Location</td> <td>National Arts Centre, Ottawa, Ontario, Canada</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Hotel</td> <td><a target="_blank" href="https://reservations.travelclick.com/12200?groupID=4844273">Lord Elgin room block</a></td>
+                    </tr>
+                    <tr>
+                        <td class="key">Dress code</td> <td>None</td>
+                    </tr>
+                    <tr>
+                        <td class="key">Registry</td> <td>None! Just show up if you can</td>
+                    </tr>
+                    <tr>
+                        <td class="key">RSVP</td> <td>Please RSVP by March 31</td>
+                    </tr>
+                    
+                </table>
+                <a class="button" href="https://forms.gle/MWDr5W6Zzc6pf4VB9">RSVP</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5600.615748106205!2d-75.6944079!3d45.42329480000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce050023827aa7%3A0x1bea53c995adfada!2sNational%20Arts%20Centre!5e0!3m2!1sen!2sus!4v1754239504844!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="column">
+                <img src="engagement.jpg" class="photo" />
+            </div>
+        </div>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+            html {
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            /* Animated background */
+            body {
+                background: radial-gradient(rgb(121, 158, 255), rgb(254, 255, 196), rgb(255, 222, 99));
+                background-size: 300% 300%;
+                animation: gradient 35s ease infinite;
+                height: 100vh;
+            }
+
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 90% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+
+            .container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+            }
+            .column {
+                padding: 30px;
+                position: relative;
+                height: 800px;
+                width: 100%;
+            }
+            @media only screen and (max-width: 900px) {
+                .container {
+                    flex-direction: column;
+                }
+                .column {
+                    height: auto;
+                }
+                body {
+                    background: linear-gradient(58deg, rgb(121, 158, 255), rgb(254, 255, 196), rgb(255, 222, 99));
+                    background-size: 300% 300%;
+                    animation: gradient-mobile 15s ease infinite;
+                    height: 100vh;
+                }
+                @keyframes gradient-mobile {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 90% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
+            }
+            a[target="_blank"]::after {
+                content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+                margin: 0 3px 0 5px;
+            }
+            .key {
+                font-weight: 700;
+                padding-right: 10px;
+                white-space: nowrap;
+                vertical-align: top;
+            }
+            table {
+                border-spacing: 0 20px;
+            }
+            .button {
+                display: block;
+                padding: 20px;
+                border-radius: 10px;
+                background-color: rgb(72 112 216);
+                color: white;
+                text-decoration: none;
+                margin: 30px 0;
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+            
+            .photo {
+                object-fit: cover;
+                width: 100%;
+                box-shadow: rgb(100 100 111) 0px 7px 29px 0px;
+            }
+            iframe {
+                width: 100%;
+                box-shadow: rgb(100 100 111) 0px 7px 29px 0px;
+            }
+
+
+            
+
+        </style>
     </body>
 </html>
