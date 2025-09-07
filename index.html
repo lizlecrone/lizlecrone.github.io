@@ -50,9 +50,148 @@
                     <tr>
                         <td class="key">Registry / Liste de mariage</td>
                         <td>
-                            None! Just show up if you can / Aucune! Venez
-                            simplement si vous le pouvez
+                            We don't need any stuff but we would greatly
+                            appreciate donations to the
+                            <a
+                                target="_blank"
+                                href="https://www.malariaconsortium.org/donate-to-malaria-consortium"
+                                >Malaria Consortium</a
+                            >.
+                            <a
+                                href="#"
+                                onclick="openFAQ()"
+                                style="
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                "
+                                >FAQ</a
+                            >
+                            / <br />
+                            Nous n'avons besoin d'aucun objet mais nous
+                            apprécierions grandement les dons au
+                            <a
+                                target="_blank"
+                                href="https://www.malariaconsortium.org/donate-to-malaria-consortium"
+                                >Malaria Consortium</a
+                            >.
+                            <a
+                                href="#"
+                                onclick="openFAQ()"
+                                style="
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                "
+                                >FAQ</a
+                            >
                         </td>
+
+                        <!-- FAQ Modal -->
+                        <dialog id="faqModal" style="border-radius: 10px">
+                            <div style="padding: 20px; max-width: 600px">
+                                <span
+                                    onclick="closeFAQ()"
+                                    style="
+                                        color: #777;
+                                        float: right;
+                                        font-size: 36px;
+                                        font-weight: bold;
+                                        cursor: pointer;
+                                    "
+                                    >&times;</span
+                                >
+                                <h2>FAQ - Frequently Asked Questions</h2>
+                                <h3>Why the Malaria Consortium?</h3>
+                                <p>
+                                    They are currently rated as GiveWell's top
+                                    charity. Their impact per dollar is among
+                                    the highest available, with an average cost
+                                    of $4,500 per life saved. The evidence of
+                                    their impact is exceptionally strong. See
+                                    more here:
+                                    <a
+                                        target="_blank"
+                                        href="https://www.givewell.org/charities/top-charities"
+                                        >https://www.givewell.org/charities/top-charities</a
+                                    >
+                                </p>
+
+                                <h3>How do I donate?</h3>
+                                <p>
+                                    You can do it from this page:
+                                    <a
+                                        target="_blank"
+                                        href="https://www.malariaconsortium.org/donate-to-malaria-consortium"
+                                        >https://www.malariaconsortium.org/donate-to-malaria-consortium</a
+                                    >
+                                </p>
+
+                                <h3>How will you know about my donation?</h3>
+                                <p>
+                                    Tell us at the wedding! We plan to have a
+                                    place where everyone can write down their
+                                    donations. They will email you a receipt so
+                                    you can remember, even if you check all the
+                                    boxes to prevent emails.
+                                </p>
+                                <hr />
+                                <h2>FAQ - Foire Aux Questions</h2>
+                                <h3>Pourquoi le Malaria Consortium ?</h3>
+                                <p>
+                                    Ils sont actuellement classés comme la
+                                    meilleure organisation caritative de
+                                    GiveWell. Leur impact par dollar est parmi
+                                    les plus élevés disponibles, avec un coût
+                                    moyen de 4 500 $ par vie sauvée. Les preuves
+                                    de leur impact sont exceptionnellement
+                                    solides. Voir plus ici :
+                                    <a
+                                        target="_blank"
+                                        href="https://www.givewell.org/charities/top-charities"
+                                        >https://www.givewell.org/charities/top-charities</a
+                                    >
+                                </p>
+
+                                <h3>Comment faire un don ?</h3>
+                                <p>
+                                    Vous pouvez le faire depuis cette page :
+                                    <a
+                                        target="_blank"
+                                        href="https://www.malariaconsortium.org/donate-to-malaria-consortium"
+                                        >https://www.malariaconsortium.org/donate-to-malaria-consortium</a
+                                    >
+                                </p>
+
+                                <h3>
+                                    Comment saurez-vous que j'ai fait un don ?
+                                </h3>
+                                <p>
+                                    Dites-le nous au mariage ! Nous prévoyons
+                                    avoir un endroit où tout le monde pourra
+                                    noter ses dons. Ils vous enverront un reçu
+                                    par email pour que vous puissiez vous en
+                                    souvenir, même si vous cochez toutes les
+                                    cases pour éviter les emails.
+                                </p>
+                            </div>
+                        </dialog>
+
+                        <script>
+                            function openFAQ() {
+                                document.getElementById("faqModal").showModal();
+                            }
+
+                            function closeFAQ() {
+                                document.getElementById("faqModal").close();
+                            }
+
+                            document
+                                .getElementById("faqModal")
+                                .addEventListener("click", function (event) {
+                                    if (event.target === this) {
+                                        this.close();
+                                    }
+                                });
+                        </script>
                     </tr>
                     <tr>
                         <td class="key">RSVP</td>
