@@ -13,184 +13,321 @@
         <div class="container">
             <div class="content">
                 <h1>
-                    <div style="font-size: 0.6em">Alex &amp; Liz's Guide to</div>
-                    <div>Things to Do in Ottawa</div>
-                    <div style="font-size: 0.6em; margin-top: 0.3em">Guide d'Alex et Liz pour les</div>
-                    <div>Activités à Ottawa</div>
+                    <div style="font-size: 0.6em">Alex &amp; Liz's Guide to / Guide d'Alex et Liz pour les</div>
+                    <div>Things to Do in Ottawa / Activités à Ottawa</div>
                 </h1>
 
                 <p class="back-link"><a href="index.html">← Back to wedding info / Retour aux infos du mariage</a></p>
 
-                <div class="sections">
+                <!-- Language Tabs -->
+                <div class="tabs">
+                    <button class="tab active" onclick="switchTab('en', this)">English</button>
+                    <button class="tab" onclick="switchTab('fr', this)">Français</button>
+                </div>
 
-                    <!-- Museums -->
-                    <div class="section">
-                        <h2>🏛️ Museums / Musées</h2>
-                        <ul>
-                            <li>
-                                <strong>Canadian War Museum / Musée canadien de la guerre</strong><br>
-                                EN: Explore Canada's military history through powerful artifacts and immersive exhibits.<br>
-                                FR: Explorez l'histoire militaire du Canada à travers des artefacts percutants et des expositions immersives.<br>
-                                <a target="_blank" href="https://www.warmuseum.ca/">warmuseum.ca</a>
-                            </li>
-                            <li>
-                                <strong>Canadian Museum of History / Musée canadien de l'histoire</strong><br>
-                                EN: Discover the stories of Canada's peoples and cultures, plus a wonderful Children's Museum inside.<br>
-                                FR: Découvrez les histoires des peuples et des cultures du Canada, ainsi qu'un merveilleux musée pour enfants à l'intérieur.<br>
-                                <a target="_blank" href="https://www.historymuseum.ca/">historymuseum.ca</a> &mdash;
-                                Children's Museum / Musée des enfants: <a target="_blank" href="https://www.historymuseum.ca/childrens-museum">historymuseum.ca/childrens-museum</a>
-                            </li>
-                            <li>
-                                <strong>Canada Science and Technology Museum / Musée des sciences et de la technologie du Canada</strong><br>
-                                EN: Hands-on science and technology exhibits for all ages.<br>
-                                FR: Des expositions interactives sur les sciences et la technologie pour tous les âges.<br>
-                                <a target="_blank" href="https://ingenium.ca/scitech/en/">ingenium.ca</a>
-                            </li>
-                            <li>
-                                <strong>Canadian Museum of Nature / Musée canadien de la nature</strong><br>
-                                EN: Natural history from dinosaurs to geology to the wonders of the animal kingdom.<br>
-                                FR: Histoire naturelle des dinosaures à la géologie en passant par les merveilles du règne animal.<br>
-                                <a target="_blank" href="https://nature.ca/en/">nature.ca</a>
-                            </li>
-                            <li>
-                                <strong>National Gallery of Canada / Musée des beaux-arts du Canada</strong><br>
-                                EN: World-class art collection including Canadian and Indigenous art in a stunning building.<br>
-                                FR: Collection d'art de classe mondiale incluant l'art canadien et autochtone dans un bâtiment magnifique.<br>
-                                <a target="_blank" href="https://www.gallery.ca/">gallery.ca</a>
-                            </li>
-                        </ul>
+                <!-- ENGLISH -->
+                <div id="tab-en" class="tab-content">
+                    <div class="sections">
+
+                        <div class="section">
+                            <h2>🏛️ Museums</h2>
+                            <ul>
+                                <li>
+                                    <strong>Canadian War Museum</strong><br>
+                                    Explore Canada's military history through powerful artifacts and immersive exhibits.<br>
+                                    <a target="_blank" href="https://www.warmuseum.ca/">warmuseum.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Canadian Museum of History</strong><br>
+                                    Discover the stories of Canada's peoples and cultures, plus a wonderful Children's Museum inside.<br>
+                                    <a target="_blank" href="https://www.historymuseum.ca/">historymuseum.ca</a> &mdash;
+                                    Children's Museum: <a target="_blank" href="https://www.historymuseum.ca/childrens-museum">historymuseum.ca/childrens-museum</a>
+                                </li>
+                                <li>
+                                    <strong>Canada Science and Technology Museum</strong><br>
+                                    Hands-on science and technology exhibits for all ages.<br>
+                                    <a target="_blank" href="https://ingenium.ca/scitech/en/">ingenium.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Canadian Museum of Nature</strong><br>
+                                    Natural history from dinosaurs to geology to the wonders of the animal kingdom.<br>
+                                    <a target="_blank" href="https://nature.ca/en/">nature.ca</a>
+                                </li>
+                                <li>
+                                    <strong>National Gallery of Canada</strong><br>
+                                    World-class art collection including Canadian and Indigenous art in a stunning building.<br>
+                                    <a target="_blank" href="https://www.gallery.ca/">gallery.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>⛵ Boat Tours</h2>
+                            <ul>
+                                <li>
+                                    <strong>Ottawa Boat Cruise</strong><br>
+                                    Canal boat tours, river tours past Rideau Falls, and a fun amphibious boat tour that goes on both land and water!<br>
+                                    <a target="_blank" href="https://ottawaboatcruise.com/ottawa-boat-tours/">ottawaboatcruise.com</a>
+                                </li>
+                                <li>
+                                    <strong>Ottawa Palapa Tours</strong><br>
+                                    A unique open-air boat experience — perfect for a relaxed cruise on the water.<br>
+                                    <a target="_blank" href="https://ottawapalapa.tours/">ottawapalapa.tours</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🚶 Walking Tours</h2>
+                            <ul>
+                                <li>
+                                    <strong>Ottawa Walking Tours</strong><br>
+                                    The best way to experience Ottawa on foot — knowledgeable guides and great routes through the city.<br>
+                                    <a target="_blank" href="https://www.ottawawalkingtours.com/">ottawawalkingtours.com</a>
+                                </li>
+                                <li>
+                                    <strong>The Haunted Walk</strong><br>
+                                    Ghost tours and paranormal adventures through Ottawa's most haunted sites — spooky fun for all!<br>
+                                    <a target="_blank" href="https://hauntedwalk.com/">hauntedwalk.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🌲 Nature</h2>
+                            <ul>
+                                <li>
+                                    <strong>Gatineau Park</strong><br>
+                                    A vast wilderness park just across the river in Québec — great for hiking, swimming, and scenic lookouts.<br>
+                                    <a target="_blank" href="https://ncc-ccn.gc.ca/places/gatineau-park">ncc-ccn.gc.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🚲 Bicycle Rental</h2>
+                            <ul>
+                                <li>
+                                    <strong>RentABike Ottawa</strong><br>
+                                    Rent a bike and ride along the beautiful Rideau Canal bike path — a classic Ottawa experience.<br>
+                                    <a target="_blank" href="https://www.rentabike.ca/">rentabike.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🎉 Festivals</h2>
+                            <ul>
+                                <li>
+                                    <strong>Ottawa Ribfest on Sparks Street</strong><br>
+                                    A beloved annual festival with mouth-watering BBQ ribs, live music, and great outdoor vibes on Sparks Street.<br>
+                                    <a target="_blank" href="https://ottawatourism.ca/en/event-calendar/ottawa-ribfest-on-sparks-street">ottawatourism.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Ottawa Chinatown Night Market</strong><br>
+                                    A vibrant night market in Ottawa's Chinatown — street food, vendors, and lively atmosphere after dark.<br>
+                                    <a target="_blank" href="https://ottawachinatown.ca/nightmarket/">ottawachinatown.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🫖 High Tea</h2>
+                            <ul>
+                                <li>
+                                    <strong>Zoe's at the Château Laurier</strong><br>
+                                    Afternoon tea at Ottawa's most iconic hotel — a refined, elegant experience with classic sandwiches, scones, and pastries.<br>
+                                    <a target="_blank" href="https://www.fairmont.com/en/hotels/ottawa/fairmont-chateau-laurier/dining/afternoon-tea.restaurant.html">fairmont.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🌇 Rooftop Patio</h2>
+                            <ul>
+                                <li>
+                                    <strong>Andaz Ottawa ByWard Market</strong><br>
+                                    Enjoy drinks and views from the rooftop patio at the Andaz Hotel in the lively ByWard Market neighbourhood.<br>
+                                    <a target="_blank" href="https://www.hyatt.com/andaz/en-US/yowaz-andaz-ottawa-byward-market/dining">hyatt.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🍟 Ottawa Specialty Foods</h2>
+                            <ul>
+                                <li>
+                                    <strong>BeaverTails (ByWard Market)</strong><br>
+                                    A Canadian icon — fried dough pastry stretched into the shape of a beaver's tail, topped with your choice of sweet toppings. The original location is right here in Ottawa's ByWard Market!<br>
+                                    <a target="_blank" href="https://beavertails.com/stores/byward-market">beavertails.com</a>
+                                </li>
+                                <li>
+                                    <strong>Poutine</strong><br>
+                                    The quintessential Québécois comfort food — french fries topped with cheese curds and smothered in rich gravy. Available practically everywhere: restaurants, food trucks, and diners throughout the city.
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
+                </div>
 
-                    <!-- Boat Tours -->
-                    <div class="section">
-                        <h2>⛵ Boat Tours / Tours en bateau</h2>
-                        <ul>
-                            <li>
-                                <strong>Ottawa Boat Cruise / Croisière Outaouais</strong><br>
-                                EN: Canal boat tours, river tours past Rideau Falls, and a fun amphibious boat tour that goes on both land and water!<br>
-                                FR: Tours en bateau sur le canal, croisières sur la rivière aux chutes Rideau, et un amusant tour en bateau amphibie qui roule sur terre et navigue sur l'eau!<br>
-                                <a target="_blank" href="https://ottawaboatcruise.com/ottawa-boat-tours/">ottawaboatcruise.com</a>
-                            </li>
-                            <li>
-                                <strong>Ottawa Palapa Tours</strong><br>
-                                EN: A unique open-air boat experience — perfect for a relaxed cruise on the water.<br>
-                                FR: Une expérience de bateau en plein air unique — parfaite pour une croisière détendue sur l'eau.<br>
-                                <a target="_blank" href="https://ottawapalapa.tours/">ottawapalapa.tours</a>
-                            </li>
-                        </ul>
+                <!-- FRENCH -->
+                <div id="tab-fr" class="tab-content" style="display:none">
+                    <div class="sections">
+
+                        <div class="section">
+                            <h2>🏛️ Musées</h2>
+                            <ul>
+                                <li>
+                                    <strong>Musée canadien de la guerre</strong><br>
+                                    Explorez l'histoire militaire du Canada à travers des artefacts percutants et des expositions immersives.<br>
+                                    <a target="_blank" href="https://www.warmuseum.ca/">warmuseum.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Musée canadien de l'histoire</strong><br>
+                                    Découvrez les histoires des peuples et des cultures du Canada, ainsi qu'un merveilleux musée pour enfants à l'intérieur.<br>
+                                    <a target="_blank" href="https://www.historymuseum.ca/">historymuseum.ca</a> &mdash;
+                                    Musée des enfants : <a target="_blank" href="https://www.historymuseum.ca/childrens-museum">historymuseum.ca/childrens-museum</a>
+                                </li>
+                                <li>
+                                    <strong>Musée des sciences et de la technologie du Canada</strong><br>
+                                    Des expositions interactives sur les sciences et la technologie pour tous les âges.<br>
+                                    <a target="_blank" href="https://ingenium.ca/scitech/en/">ingenium.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Musée canadien de la nature</strong><br>
+                                    Histoire naturelle des dinosaures à la géologie en passant par les merveilles du règne animal.<br>
+                                    <a target="_blank" href="https://nature.ca/en/">nature.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Musée des beaux-arts du Canada</strong><br>
+                                    Collection d'art de classe mondiale incluant l'art canadien et autochtone dans un bâtiment magnifique.<br>
+                                    <a target="_blank" href="https://www.gallery.ca/">gallery.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>⛵ Tours en bateau</h2>
+                            <ul>
+                                <li>
+                                    <strong>Croisière Outaouais</strong><br>
+                                    Tours en bateau sur le canal, croisières sur la rivière aux chutes Rideau, et un amusant tour en bateau amphibie qui roule sur terre et navigue sur l'eau!<br>
+                                    <a target="_blank" href="https://ottawaboatcruise.com/ottawa-boat-tours/">ottawaboatcruise.com</a>
+                                </li>
+                                <li>
+                                    <strong>Ottawa Palapa Tours</strong><br>
+                                    Une expérience de bateau en plein air unique — parfaite pour une croisière détendue sur l'eau.<br>
+                                    <a target="_blank" href="https://ottawapalapa.tours/">ottawapalapa.tours</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🚶 Visites à pied</h2>
+                            <ul>
+                                <li>
+                                    <strong>Ottawa Walking Tours</strong><br>
+                                    La meilleure façon de découvrir Ottawa à pied — des guides compétents et de superbes parcours à travers la ville.<br>
+                                    <a target="_blank" href="https://www.ottawawalkingtours.com/">ottawawalkingtours.com</a>
+                                </li>
+                                <li>
+                                    <strong>La promenade hantée</strong><br>
+                                    Des tours de fantômes et des aventures paranormales à travers les sites les plus hantés d'Ottawa — une peur amusante pour tous!<br>
+                                    <a target="_blank" href="https://hauntedwalk.com/">hauntedwalk.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🌲 Nature</h2>
+                            <ul>
+                                <li>
+                                    <strong>Parc de la Gatineau</strong><br>
+                                    Un vaste parc naturel juste de l'autre côté de la rivière au Québec — idéal pour la randonnée, la baignade et les belvédères panoramiques.<br>
+                                    <a target="_blank" href="https://ncc-ccn.gc.ca/places/gatineau-park">ncc-ccn.gc.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🚲 Location de vélos</h2>
+                            <ul>
+                                <li>
+                                    <strong>RentABike Ottawa</strong><br>
+                                    Louez un vélo et pédalez le long du magnifique sentier cyclable du canal Rideau — une expérience classique à Ottawa.<br>
+                                    <a target="_blank" href="https://www.rentabike.ca/">rentabike.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🎉 Festivals</h2>
+                            <ul>
+                                <li>
+                                    <strong>Ottawa Ribfest sur la rue Sparks</strong><br>
+                                    Un festival annuel très apprécié avec des côtes levées BBQ délicieuses, de la musique live et une superbe ambiance extérieure sur la rue Sparks.<br>
+                                    <a target="_blank" href="https://ottawatourism.ca/en/event-calendar/ottawa-ribfest-on-sparks-street">ottawatourism.ca</a>
+                                </li>
+                                <li>
+                                    <strong>Marché nocturne du Chinatown d'Ottawa</strong><br>
+                                    Un marché nocturne animé dans le Chinatown d'Ottawa — restauration de rue, vendeurs et ambiance festive à la tombée de la nuit.<br>
+                                    <a target="_blank" href="https://ottawachinatown.ca/nightmarket/">ottawachinatown.ca</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🫖 Thé de l'après-midi</h2>
+                            <ul>
+                                <li>
+                                    <strong>Zoe's au Château Laurier</strong><br>
+                                    Le thé de l'après-midi au plus emblématique hôtel d'Ottawa — une expérience raffinée et élégante avec des sandwichs classiques, des scones et des pâtisseries.<br>
+                                    <a target="_blank" href="https://www.fairmont.com/en/hotels/ottawa/fairmont-chateau-laurier/dining/afternoon-tea.restaurant.html">fairmont.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🌇 Terrasse sur le toit</h2>
+                            <ul>
+                                <li>
+                                    <strong>Andaz Ottawa marché By</strong><br>
+                                    Profitez de boissons et d'une vue imprenable depuis la terrasse sur le toit de l'hôtel Andaz dans le quartier animé du marché By.<br>
+                                    <a target="_blank" href="https://www.hyatt.com/andaz/en-US/yowaz-andaz-ottawa-byward-market/dining">hyatt.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="section">
+                            <h2>🍟 Spécialités culinaires d'Ottawa</h2>
+                            <ul>
+                                <li>
+                                    <strong>BeaverTails (marché By)</strong><br>
+                                    Une icône canadienne — une pâtisserie de pâte frite étirée en forme de queue de castor, garnie de la garniture sucrée de votre choix. L'emplacement d'origine se trouve ici même au marché By d'Ottawa!<br>
+                                    <a target="_blank" href="https://beavertails.com/stores/byward-market">beavertails.com</a>
+                                </li>
+                                <li>
+                                    <strong>Poutine</strong><br>
+                                    Le plat réconfortant quintessentiel du Québec — des frites garnies de grains de fromage frais nappées d'une riche sauce brune. Disponible pratiquement partout : restaurants, camions de bouffe et casse-croûtes dans toute la ville.
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
+                </div>
 
-                    <!-- Walking Tours -->
-                    <div class="section">
-                        <h2>🚶 Walking Tours / Visites à pied</h2>
-                        <ul>
-                            <li>
-                                <strong>Ottawa Walking Tours</strong><br>
-                                EN: The best way to experience Ottawa on foot — knowledgeable guides and great routes through the city.<br>
-                                FR: La meilleure façon de découvrir Ottawa à pied — des guides compétents et de superbes parcours à travers la ville.<br>
-                                <a target="_blank" href="https://www.ottawawalkingtours.com/">ottawawalkingtours.com</a>
-                            </li>
-                            <li>
-                                <strong>The Haunted Walk / La promenade hantée</strong><br>
-                                EN: Ghost tours and paranormal adventures through Ottawa's most haunted sites — spooky fun for all!<br>
-                                FR: Des tours de fantômes et des aventures paranormales à travers les sites les plus hantés d'Ottawa — une peur amusante pour tous!<br>
-                                <a target="_blank" href="https://hauntedwalk.com/">hauntedwalk.com</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Nature -->
-                    <div class="section">
-                        <h2>🌲 Nature</h2>
-                        <ul>
-                            <li>
-                                <strong>Gatineau Park / Parc de la Gatineau</strong><br>
-                                EN: A vast wilderness park just across the river in Québec — great for hiking, swimming, and scenic lookouts.<br>
-                                FR: Un vaste parc naturel juste de l'autre côté de la rivière au Québec — idéal pour la randonnée, la baignade et les belvédères panoramiques.<br>
-                                <a target="_blank" href="https://ncc-ccn.gc.ca/places/gatineau-park">ncc-ccn.gc.ca</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Bicycle Rental -->
-                    <div class="section">
-                        <h2>🚲 Bicycle Rental / Location de vélos</h2>
-                        <ul>
-                            <li>
-                                <strong>RentABike Ottawa</strong><br>
-                                EN: Rent a bike and ride along the beautiful Rideau Canal bike path — a classic Ottawa experience.<br>
-                                FR: Louez un vélo et pédalez le long du magnifique sentier cyclable du canal Rideau — une expérience classique à Ottawa.<br>
-                                <a target="_blank" href="https://www.rentabike.ca/">rentabike.ca</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Festivals -->
-                    <div class="section">
-                        <h2>🎉 Festivals</h2>
-                        <ul>
-                            <li>
-                                <strong>Ottawa Ribfest on Sparks Street</strong><br>
-                                EN: A beloved annual festival with mouth-watering BBQ ribs, live music, and great outdoor vibes on Sparks Street.<br>
-                                FR: Un festival annuel très apprécié avec des côtes levées BBQ délicieuses, de la musique live et une superbe ambiance extérieure sur la rue Sparks.<br>
-                                <a target="_blank" href="https://ottawatourism.ca/en/event-calendar/ottawa-ribfest-on-sparks-street">ottawatourism.ca</a>
-                            </li>
-                            <li>
-                                <strong>Ottawa Chinatown Night Market / Marché nocturne du Chinatown d'Ottawa</strong><br>
-                                EN: A vibrant night market in Ottawa's Chinatown — street food, vendors, and lively atmosphere after dark.<br>
-                                FR: Un marché nocturne animé dans le Chinatown d'Ottawa — restauration de rue, vendeurs et ambiance festive à la tombée de la nuit.<br>
-                                <a target="_blank" href="https://ottawachinatown.ca/nightmarket/">ottawachinatown.ca</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- High Tea -->
-                    <div class="section">
-                        <h2>🫖 High Tea / Thé de l'après-midi</h2>
-                        <ul>
-                            <li>
-                                <strong>Zoe's at the Château Laurier / Zoe's au Château Laurier</strong><br>
-                                EN: Afternoon tea at Ottawa's most iconic hotel — a refined, elegant experience with classic sandwiches, scones, and pastries.<br>
-                                FR: Le thé de l'après-midi au plus emblématique hôtel d'Ottawa — une expérience raffinée et élégante avec des sandwichs classiques, des scones et des pâtisseries.<br>
-                                <a target="_blank" href="https://www.fairmont.com/en/hotels/ottawa/fairmont-chateau-laurier/dining/afternoon-tea.restaurant.html">fairmont.com</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Rooftop Patio -->
-                    <div class="section">
-                        <h2>🌇 Rooftop Patio / Terrasse sur le toit</h2>
-                        <ul>
-                            <li>
-                                <strong>Andaz Ottawa ByWard Market</strong><br>
-                                EN: Enjoy drinks and views from the rooftop patio at the Andaz Hotel in the lively ByWard Market neighbourhood.<br>
-                                FR: Profitez de boissons et d'une vue imprenable depuis la terrasse sur le toit de l'hôtel Andaz dans le quartier animé du marché By.<br>
-                                <a target="_blank" href="https://www.hyatt.com/andaz/en-US/yowaz-andaz-ottawa-byward-market/dining">hyatt.com</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Ottawa Specialty Foods -->
-                    <div class="section">
-                        <h2>🍟 Ottawa Specialty Foods / Spécialités culinaires d'Ottawa</h2>
-                        <ul>
-                            <li>
-                                <strong>BeaverTails (ByWard Market)</strong><br>
-                                EN: A Canadian icon — fried dough pastry stretched into the shape of a beaver's tail, topped with your choice of sweet toppings. The original location is right here in Ottawa's ByWard Market!<br>
-                                FR: Une icône canadienne — une pâtisserie de pâte frite étirée en forme de queue de castor, garnie de la garniture sucrée de votre choix. L'emplacement d'origine se trouve ici même au marché By d'Ottawa!<br>
-                                <a target="_blank" href="https://beavertails.com/stores/byward-market">beavertails.com</a>
-                            </li>
-                            <li>
-                                <strong>Poutine</strong><br>
-                                EN: The quintessential Québécois comfort food — french fries topped with cheese curds and smothered in rich gravy. Available practically everywhere: restaurants, food trucks, and diners throughout the city.<br>
-                                FR: Le plat réconfortant quintessentiel du Québec — des frites garnies de grains de fromage frais nappées d'une riche sauce brune. Disponible pratiquement partout : restaurants, camions de bouffe et casse-croûtes dans toute la ville.<br>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div><!-- end .sections -->
             </div><!-- end .content -->
         </div><!-- end .container -->
+
+        <script>
+            function switchTab(lang, btn) {
+                document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+                document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+                document.getElementById('tab-' + lang).style.display = 'block';
+                btn.classList.add('active');
+            }
+        </script>
 
         <style>
             html,
@@ -222,9 +359,7 @@
                 100% { background-position: 0% 50%; }
             }
 
-            .container {
-                width: 100%;
-            }
+            .container { width: 100%; }
 
             .content {
                 padding: 30px;
@@ -237,12 +372,40 @@
             }
 
             .back-link {
-                margin: 0 0 30px 0;
+                margin: 0 0 20px 0;
             }
 
             .back-link a {
                 color: inherit;
                 font-weight: 700;
+            }
+
+            .tabs {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 24px;
+            }
+
+            .tab {
+                font-family: "Montserrat", sans-serif;
+                font-size: 1em;
+                font-weight: 700;
+                padding: 10px 24px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                background: rgba(255, 255, 255, 0.4);
+                color: inherit;
+                transition: background 0.2s, box-shadow 0.2s;
+            }
+
+            .tab:hover {
+                background: rgba(255, 255, 255, 0.65);
+            }
+
+            .tab.active {
+                background: rgba(255, 255, 255, 0.85);
+                box-shadow: rgb(100 100 111 / 25%) 0px 4px 12px 0px;
             }
 
             h2 {
@@ -275,13 +438,9 @@
                 line-height: 1.5;
             }
 
-            li:last-child {
-                margin-bottom: 0;
-            }
+            li:last-child { margin-bottom: 0; }
 
-            a {
-                color: rgb(50, 80, 180);
-            }
+            a { color: rgb(50, 80, 180); }
 
             a[target="_blank"]::after {
                 content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
